@@ -1,0 +1,23 @@
+.warning {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.warning .news-item {
+    width: 100%;
+}
+
+@media (max-width: 1024px) {
+}
+
+@media (max-width: 768px) {
+    .warning .news-list {
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+    }
+
+    .warning .news-item {
+        min-width: 265px;
+    }
+}

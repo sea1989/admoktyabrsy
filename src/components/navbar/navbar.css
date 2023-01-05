@@ -1,0 +1,38 @@
+.header__navbar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.nav__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.nav__item {
+}
+
+.nav__link {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+    color: var(--black);
+}
+
+.nav__link:hover {
+    color: var(--blue);
+}
+
+.nav__link--active {
+    color: var(--blue);
+}
+
+@media (max-width: 1120px) {
+    .nav__list {
+        display: none;
+    }
+}

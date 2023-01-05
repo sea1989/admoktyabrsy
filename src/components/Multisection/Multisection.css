@@ -1,0 +1,90 @@
+.multisection {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 70px;
+}
+
+.multisection-panel {
+    display: flex;
+    gap: 40px;
+
+    width: 100%;
+
+    margin-top: -53px;
+}
+
+.multisection-panel__item {
+    display: flex;
+    gap: 22px;
+
+    align-items: center;
+
+    padding: 20px;
+    background: var(--white);
+    box-shadow: 0px 12px 18px rgba(0, 0, 0, 0.15);
+
+    width: 33%;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+    color: var(--black);
+    cursor: pointer;
+}
+
+.multisection-panel__item:hover {
+    background: var(--blue);
+    box-shadow: 0px 12px 18px 1px rgba(0, 0, 0, 0.2);
+    color: var(--white);
+}
+
+.multisection-panel__item:hover path {
+    stroke: var(--white);
+}
+
+.multisection-wrapper {
+    display: flex;
+    width: 100%;
+    gap: 40px;
+}
+
+.multisection1 {
+    width: 50%;
+}
+
+.multisection2 {
+    width: 25%;
+}
+
+.multisection3 {
+    width: 25%;
+}
+
+@media (max-width: 1024px) {
+    .multisection-panel {
+        display: none;
+    }
+
+    .multisection-wrapper {
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .multisection1 {
+        width: 100%;
+    }
+
+    .multisection2,
+    .multisection3 {
+        width: 47%;
+    }
+}
+
+@media (max-width: 768px) {
+    .multisection2,
+    .multisection3 {
+        width: 100%;
+    }
+}

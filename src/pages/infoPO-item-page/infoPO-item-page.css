@@ -1,0 +1,18 @@
+ul.info-po__text {
+    list-style: disc;
+    padding-left: 40px;
+}
+
+.info-po__page h1 {
+    margin-bottom: 30px;
+}
+
+.info-po__page h3 {
+    margin: 20px 0;
+}
+
+@media (max-width: 1024px) {
+}
+
+@media (max-width: 768px) {
+}

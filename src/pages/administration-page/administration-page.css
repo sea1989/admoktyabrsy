@@ -1,0 +1,10 @@
+.administration h3 {
+    margin: 30px 0 20px;
+}
+
+.administration__info {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 240%;
+}

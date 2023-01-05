@@ -1,0 +1,43 @@
+/* The sidebar menu */
+.sidenav {
+    display: flex;
+    flex-direction: column;
+
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 220px; /* Set the width of the sidebar */
+}
+
+/* The navigation menu links */
+.sidenav__item {
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 110%;
+
+    padding-bottom: 16px;
+
+    border-bottom: 1px solid var(--black);
+    margin-bottom: 16px;
+
+    color: var(--black);
+}
+
+.sidenav__item--active {
+    color: var(--blue);
+    border-bottom: 1px solid var(--blue);
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: var(--blue);
+    border-bottom: 1px solid var(--blue);
+}
+
+@media (max-width: 1024px) {
+    .sidenav {
+        display: none;
+    }
+
+    
+}
