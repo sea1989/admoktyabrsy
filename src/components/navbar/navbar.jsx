@@ -22,7 +22,7 @@ export const Navbar = () => {
         </li>
 
         <li className='nav__item'>
-          <Link className='nav__link' to='/current-projects'>
+          <Link className='nav__link' to='/sessions'>
             Собрание депутатов
           </Link>
         </li>
@@ -34,13 +34,13 @@ export const Navbar = () => {
         </li>
 
         <li className='nav__item'>
-          <Link className='nav__link' to='/events'>
+          <Link className='nav__link' to='/news'>
             Новости
           </Link>
         </li>
 
         <li className='nav__item'>
-          <Link className='nav__link' to='/docs'>
+          <Link className='nav__link' to='/notice'>
             Объявления
           </Link>
         </li>

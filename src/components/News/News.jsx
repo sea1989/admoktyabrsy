@@ -7,52 +7,54 @@ import './News.css';
 
 const News = () => {
 
+  let currentTitleNews = 'Впервые в п. Октябрьский прошла экологическая игра «Чистые игры»';
+
   return (
 
-      <section className='news'>
+    <section className='news'>
 
-        <div className="news-top">
-          <h2>Новости</h2>
-          <Link className='all-link'>
-            Все новости 🠒
-          </Link>
-        </div>
+      <div className="news-top">
+        <h2>Новости</h2>
+        <Link className='all-link'>
+          Все новости 🠒
+        </Link>
+      </div>
 
-        <div className="news-list">
-          <Link className='news-item'>
-            <img src={News1} alt="" />
-            <span className='news-item__date'>4 октября 2022</span>
-            <p className='news-item__title'>
-              Впервые в п. Октябрьский прошла экологическая игра «Чистые игры»
-            </p>
-          </Link>
+      <div className="news-list">
+        <Link to={'/news-item/' + currentTitleNews} className='news-item'>
+          <img src={News1} alt="" />
+          <span className='news-item__date'>4 октября 2022</span>
+          <p className='news-item__title'>
+            {currentTitleNews}
+          </p>
+        </Link>
 
-          <Link className='news-item'>
-            <img src={News1} alt="" />
-            <span className='news-item__date'>4 октября 2022</span>
-            <p className='news-item__title'>
-              Впервые в п. Октябрьский прошла экологическая игра «Чистые игры»
-            </p>
-          </Link>
+        <Link to={'/news-item/' + currentTitleNews} className='news-item'>
+          <img src={News1} alt="" />
+          <span className='news-item__date'>4 октября 2022</span>
+          <p className='news-item__title'>
+            {currentTitleNews}
+          </p>
+        </Link>
 
-          <Link className='news-item'>
-            <img src={News1} alt="" />
-            <span className='news-item__date'>4 октября 2022</span>
-            <p className='news-item__title'>
-              Впервые в п. Октябрьский прошла экологическая игра «Чистые игры»
-            </p>
-          </Link>
+        <Link to={'/news-item/' + currentTitleNews} className='news-item'>
+          <img src={News1} alt="" />
+          <span className='news-item__date'>4 октября 2022</span>
+          <p className='news-item__title'>
+            {currentTitleNews}
+          </p>
+        </Link>
 
-          <Link className='news-item'>
-            <img src={News1} alt="" />
-            <span className='news-item__date'>4 октября 2022</span>
-            <p className='news-item__title'>
-              Впервые в п. Октябрьский прошла экологическая игра «Чистые игры»
-            </p>
-          </Link>
-        </div>
+        <Link to={'/news-item/' + currentTitleNews} className='news-item'>
+          <img src={News1} alt="" />
+          <span className='news-item__date'>4 октября 2022</span>
+          <p className='news-item__title'>
+            {currentTitleNews}
+          </p>
+        </Link>
+      </div>
 
-      </section>
+    </section>
 
   );
 };

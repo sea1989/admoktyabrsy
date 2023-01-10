@@ -1,0 +1,19 @@
+.notice-item-page {
+    display: flex;
+    flex-direction: column;
+}
+
+.notice-item-page .info-po__date {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.notice-item-page li {
+    margin-bottom: 20px;
+}
+
+@media (max-width: 1024px) {
+}
+
+@media (max-width: 768px) {
+}
