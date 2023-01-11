@@ -1,4 +1,4 @@
-/* .resources {
+.resources {
     display: flex;
     flex-direction: column;
     padding-bottom: 96px;
@@ -39,4 +39,4 @@
         flex-direction: column;
         gap: 10px;
     }
-} */
+}

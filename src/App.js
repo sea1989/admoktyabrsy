@@ -18,6 +18,7 @@ import { NoticItemPage } from './pages/Notice-item-page/Notice-item-page';
 import { SessionsPage } from './pages/Sessions-page/Sessions-page';
 import { ActsPage } from './pages/Acts-page/Acts-page';
 import { GalleryPage } from './pages/Gallery-page/Gallery-page';
+import { FeedbackPage } from './pages/Feedback-page/Feedback-page';
 
 
 
@@ -42,6 +43,7 @@ function App() {
           <Route exact path="/sessions" element={<SessionsPage />} />
           <Route exact path="/acts" element={<ActsPage />} />
           <Route exact path="/gallery" element={<GalleryPage />} />
+          <Route exact path="/feedback" element={<FeedbackPage />} />
         </Routes>
 
         <Footer />

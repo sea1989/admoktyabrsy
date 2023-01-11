@@ -54,7 +54,7 @@ export const Header = () => {
           <div className="header__bottom">
             <Navbar />
 
-            <button className='btn-feedback' >Обратная связь</button>
+            <Link to='/feedback' className='btn-feedback' >Обратная связь</Link>
           </div>
 
 
