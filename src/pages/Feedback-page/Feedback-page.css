@@ -5,13 +5,16 @@
     margin: 30px 0;
 }
 
-.feedback__form input {
+.feedback__form input,
+.feedback__form textarea,
+.feedback__form select {
     padding: 10px;
     border: 1px solid #000000;
     border-radius: 6px;
 }
 
-.feedback__form input:hover {
+.feedback__form input:hover,
+.feedback__form textarea:hover {
     border: 1px solid var(--blue);
 }
 
@@ -23,12 +26,87 @@
     color: #9b9b9b;
 }
 
+.label-select {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+
+    margin-top: 20px;
+}
+
+.politics {
+    display: flex;
+    gap: 20px;
+
+    align-items: center;
+
+    margin: 30px 0;
+}
+
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+}
+
+.politics__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+}
+
+.politics a {
+    color: var(--blue);
+}
+
+.feedback__info {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin-top: 70px;
+}
+
+.feedback__info-item {
+    display: flex;
+    padding: 26px;
+    width: 50%;
+    gap: 22px;
+    background: var(--white);
+    align-items: center;
+
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+
+    color: var(--black);
+}
+
+.feedback__info-item:hover {
+    box-shadow: 0px 12px 18px 1px rgba(0, 0, 0, 0.15);
+}
+
+.page-right__feedback .container {
+    padding: 0;
+}
+
+.page-right__feedback .service__wrapper {
+    flex-direction: column;
+}
+
+.page-right__feedback .service__item {
+    flex-direction: column;
+    width: 100%;
+}
+
 @media (max-width: 1024px) {
 }
 
 @media (max-width: 768px) {
-    .info-po__item {
+    .feedback__info {
         flex-direction: column;
-        align-items: flex-start;
+    }
+
+    .feedback__info-item {
+        width: 100%;
     }
 }

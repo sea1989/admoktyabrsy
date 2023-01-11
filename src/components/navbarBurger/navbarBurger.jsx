@@ -11,16 +11,30 @@ export const NavbarBurger = () => {
 
   const [active, setActive] = useState('');
 
-  const projectsList = [
-    { id: 1, link: '/current-projects', title: 'Текущие проекты' },
-    { id: 2, link: '/last-projects', title: 'Завершенные проекты' },
+  const gosList = [
+    { id: 1, link: '/', title: 'Собрание депутатов' },
+    { id: 2, link: '/', title: 'Председатель' },
+    { id: 3, link: '/', title: 'Депутаты' },
+    { id: 4, link: '/sessions', title: 'Депутаты' },
+    { id: 5, link: '/acts', title: 'Нормативные правовые акты' },
+    { id: 6, link: '/', title: 'Интернет - приёмная' },
+    { id: 7, link: '/', title: 'Открытые данные' },
+    { id: 8, link: '/', title: 'Сообщить о факте коррупции' },
+    { id: 9, link: '/gallery', title: 'Галерея' },
+    { id: 10, link: '/', title: 'Вопрос-ответ' },
   ];
 
-  const aboutList = [
-    { id: 1, link: '/about', title: 'О нас' },
-    { id: 2, link: '/history', title: 'История организации' },
-    { id: 3, link: '/team', title: 'Команда' },
-    { id: 4, link: '/partners', title: 'Партнёры' },
+  const admList = [
+    { id: 1, link: '/', title: 'Глава администрации' },
+    { id: 2, link: '/', title: 'Муниципальные служащие администрации' },
+    { id: 3, link: '/', title: 'Руководители администрации' },
+    { id: 4, link: '/', title: 'Публичные выступления руководителей Администрации' },
+    { id: 5, link: '/', title: 'Полномочия Администрации' },
+    { id: 6, link: '/', title: 'Муниципальная служба' },
+    { id: 7, link: '/', title: 'Нормативные правовые акты' },
+    { id: 8, link: '/', title: 'Статистическая информация' },
+    { id: 9, link: '/', title: 'О муниципальном образовании' },
+    { id: 10, link: '/', title: 'Подведомственные организации' },
   ];
 
   const eventsList = [
@@ -55,20 +69,24 @@ export const NavbarBurger = () => {
 
             <li className='burger-menu-item'>
               <AccordionBurgerMenu
-                title='О нас'
+                title='Администрация'
                 active={active}
                 setActive={setActive}
-                list={aboutList}
+                list={admList}
               />
             </li>
 
             <li className='burger-menu-item'>
               <AccordionBurgerMenu
-                title='Проекты'
+                title='Собрание депутатов'
                 active={active}
                 setActive={setActive}
-                list={projectsList}
+                list={gosList}
               />
+            </li>
+
+            <li className='burger-menu-item'>
+              <Link className='burger-menu-link' to='/info-po'>Информация по ГО и ЧС</Link>
             </li>
 
             <li className='burger-menu-item'>
@@ -76,16 +94,29 @@ export const NavbarBurger = () => {
             </li>
 
             <li className='burger-menu-item'>
-              <AccordionBurgerMenu
-                title='События'
-                active={active}
-                setActive={setActive}
-                list={eventsList}
-              />
+              <Link className='burger-menu-link' to='/notice'>Объявления</Link>
+            </li>
+
+
+            <li className='burger-menu-item'>
+              <Link className='burger-menu-link' to='/feedback'>Обратная связь</Link>
             </li>
 
             <li className='burger-menu-item'>
-              <Link className='burger-menu-link' to='/contacts'>Контакты</Link>
+              <Link className='burger-menu-link' to='/feedback'>Открытые данные</Link>
+            </li>
+
+            <li className='burger-menu-item'>
+              <Link className='burger-menu-link' to='/'>Вопрос - ответ</Link>
+            </li>
+
+
+            <li className='burger-menu-item'>
+              <Link className='burger-menu-link' to='/'>Сообщить о факте коррупции</Link>
+            </li>
+
+            <li className='burger-menu-item'>
+              <Link className='burger-menu-link' to='/mao-site'>Карта сайта</Link>
             </li>
 
             <li className='burger-menu-item'>
@@ -93,10 +124,6 @@ export const NavbarBurger = () => {
             </li>
 
           </ul>
-
-          <Link className='btn-white'>
-            помочь
-          </Link>
 
         </div>
       </div>

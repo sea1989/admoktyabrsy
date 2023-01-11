@@ -54,7 +54,11 @@ export const Header = () => {
           <div className="header__bottom">
             <Navbar />
 
-            <Link to='/feedback' className='btn-feedback' >Обратная связь</Link>
+            <Link to='/feedback' className='btn-feedback' >Обратная связь
+              <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16 1L9.57143 16L7.42857 9.57143L1 7.42857L16 1Z" stroke="white" stroke-width="1.6" stroke-linejoin="round" />
+              </svg>
+            </Link>
           </div>
 
 
