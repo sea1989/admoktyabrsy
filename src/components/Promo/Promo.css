@@ -17,15 +17,22 @@
     width: 80%;
     border: none;
     padding: 20px 45px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+    color: #221f1f;
 }
 
-.search-form input::placeholder {
+
+input[type="search"]::placeholder {
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 120%;
     color: #9b9b9b;
 }
+
 
 .btn-search {
     background: #f8c300;
