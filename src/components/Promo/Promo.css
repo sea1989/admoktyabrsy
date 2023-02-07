@@ -68,7 +68,6 @@
     line-height: 120%;
 
     text-align: center;
-
     padding: 9px 18px;
 
     cursor: pointer;
@@ -87,11 +86,18 @@
 
 @media (max-width: 1024px) {
 
-.search-form input {
-    width: 100%;
-}
+    .search-form input {
+        width: 100%;
+    }
 
     .search-form {
         flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .search-icon {
+        display: none;
     }
 }
